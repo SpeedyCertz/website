@@ -26,17 +26,18 @@ jobs:
         target: "/root/speedy-certz"
                                                               
     - name: Executing remote commands for Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+      uses: appleboy/ssh-action@master
       with:
         node-version: ${{ matrix.node-version }}
         host: ${{ secrets.HOST }}
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
-        script: ls
+        script: lsof -wni tcp:3000
     - run: npm install
     - run: npm run build --if-present
-    - run: pm2 reload "speedy-certz"
+    - run: npx next start
+    # - run: pm2 reload "speedy-certz"
     - run: pm2 start npm --name "speedy-certz" -- start
       env:
         CI: true
