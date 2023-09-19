@@ -1,4 +1,4 @@
-name: Next JS Continuous Deployment
+name: Next.js App Continuous Deployment
 
 on: [push]
 
@@ -7,30 +7,24 @@ jobs:
 
     runs-on: self-hosted
 
+    strategy:
+      matrix:
+        node-version: [18.x]
+
     steps:
     - uses: actions/checkout@v2
-
-    - name: Copy repository contents via scp
-      uses: appleboy/scp-action@master
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+        source: "."
+        target: "/root/speedy-certz"
+    - run: npm install
+    - run: npm run build --if-present
+    - run: pm2 reload next-js
       env:
+        CI: true
         HOST: ${{ secrets.HOST }}
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
-      with:
-        source: "."
-        target: "/root/speedy-certz"
-                                                              
-    - name: Executing remote commands for Next.js App
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
-        script: lsof -wni tcp:3000
-    - run: npm install
-    - run: npm run build --if-present
-    - run: pm2 kill
-    # - run: pm2 start npm --name "speedy-certz" -- start
-    - run: npx next start
+        KEY: ${{ secrets.SSHKEY }}        
