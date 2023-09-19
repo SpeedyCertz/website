@@ -7,10 +7,6 @@ jobs:
 
     runs-on: self-hosted
 
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
     - uses: actions/checkout@v2
 
@@ -25,10 +21,9 @@ jobs:
         source: "."
         target: "/root/speedy-certz"
                                                               
-    - name: Executing remote commands for Node.js ${{ matrix.node-version }}
+    - name: Executing remote commands for Next.js App
       uses: appleboy/ssh-action@master
       with:
-        node-version: ${{ matrix.node-version }}
         host: ${{ secrets.HOST }}
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
@@ -36,4 +31,5 @@ jobs:
     - run: npm install
     - run: npm run build --if-present
     - run: pm2 kill
-    - run: pm2 start npm --name "speedy-certz" -- start
+    # - run: pm2 start npm --name "speedy-certz" -- start
+    - run: npx next start
