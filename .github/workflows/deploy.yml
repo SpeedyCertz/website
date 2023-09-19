@@ -33,11 +33,7 @@ jobs:
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
-        script: lsof -wni tcp:3000
     - run: npm install
     - run: npm run build --if-present
-    - run: npx next start
-    # - run: pm2 reload "speedy-certz"
+    - run: pm2 kill
     - run: pm2 start npm --name "speedy-certz" -- start
-      env:
-        CI: true
