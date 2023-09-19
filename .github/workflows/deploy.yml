@@ -24,7 +24,3 @@ jobs:
     - run: pm2 reload next-js
       env:
         CI: true
-        HOST: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}        
