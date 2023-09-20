@@ -24,8 +24,6 @@ jobs:
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSHKEY }}
         script: |
-          pwd
-          ls -ltr
           cd /root/speedy-certz
           ls -ltr
           export NVM_DIR="$HOME/.nvm"
