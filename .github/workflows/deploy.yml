@@ -2,8 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   build:
@@ -11,35 +10,25 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [ 18.x ]
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
 
-    - name: Executing remote command
-      uses: appleboy/ssh-action@v1.0.0
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        port: ${{ secrets.PORT }}
-        key: ${{ secrets.SSHKEY }}
-        script: |
-          ls
-          cd /root/speedycertz
-          ls
-        
-
-    - name: Executing remote command
+    - name: Fetching code and deploying on 
       uses: appleboy/ssh-action@master
       with:
         node-version: ${{ matrix.node-version }}
         host: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
-        script: lsof -wni tcp:3000
+        port: ${{ secrets.PORT }}
+        key: ${{ secrets.SSHKEY }}
+        script: |
+    - run: ls -ltr
+    - run: cd /root/speedycertz
+    - run: ls -ltr
     - run: npm install
     - run: npm run build --if-present
-    - run: pm2 reload next-js
+    - run: npm install pm2 -g
+    - run: pm2 start npm --name "speedy-certz" -- start --port 3000
       env:
         CI: true
