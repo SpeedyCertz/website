@@ -27,6 +27,8 @@ jobs:
           cd /root/speedy-certz
           ls -ltr
           git pull origin main
+          pwd
+          ls -ltra
           export NVM_DIR="$HOME/.nvm"
           [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
           npm install
