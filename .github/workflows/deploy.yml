@@ -25,7 +25,7 @@ jobs:
         key: ${{ secrets.SSHKEY }}
         script: |
     - run: ls -ltr
-    - run: cd /root/speedycertz
+    - run: cd /root/speedy-certz
     - run: ls -ltr
     - run: npm install
     - run: npm run build --if-present
