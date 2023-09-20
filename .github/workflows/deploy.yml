@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy Next.js App
 
 on:
   push:
@@ -15,7 +15,18 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Fetching code and deploying on 
+    - name: Fetch codebase
+      uses: appleboy/scp-action@master
+      env:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        port: ${{ secrets.PORT }}
+        key: ${{ secrets.SSHKEY }}
+      with:
+        source: "."
+        target: "/root/speedy-certz"
+    
+    - name: Deploy Code
       uses: appleboy/ssh-action@master
       with:
         node-version: ${{ matrix.node-version }}
@@ -24,20 +35,13 @@ jobs:
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSHKEY }}
         script: |
-          ls
-          cd speedy-certz
-          ls
-          git checkout main
-          git pull origin main
-          npm i
+          pwd
+          ls -ltr
+          cd /root/speedy-certz
+          ls -ltr
+          npm install
           npm run build --if-present
-    - run: pwd
-    - run: ls -ltr
-    - run: cd /root/speedy-certz
-    - run: ls -ltr
-    - run: npm install
-    - run: npm run build --if-present
-    - run: npm install pm2 -g
-    - run: pm2 start npm --name "speedy-certz" -- start --port 3000
+          npm install pm2 -g
+          pm2 start npm --name "speedy-certz" -- start --port 3000
       env:
         CI: true
