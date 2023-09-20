@@ -31,6 +31,7 @@ jobs:
           [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
           npm install
           npm run build
+          pm2 delete "speedy-certz"
           pm2 start npm --name "speedy-certz" -- start
       env:
         CI: true
