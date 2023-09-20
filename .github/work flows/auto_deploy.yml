@@ -1,0 +1,37 @@
+name: Deploy Next.js App
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [ 18.x ]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Fetch codebase and deploy app
+        uses: appleboy/ssh-action@master
+        with:
+          node-version: ${{ matrix.node-version }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.SSHKEY }}
+          script: |
+            cd /root/speedy-certz
+            ls -ltra
+            git pull origin main
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            npm install
+            npm run build
+            pm2 delete "speedy-certz"
+            pm2 start npm --name "speedy-certz" -- start
+        env:
+          CI: true
