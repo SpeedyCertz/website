@@ -24,6 +24,7 @@ jobs:
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSHKEY }}
         script: |
+    - run: pwd
     - run: ls -ltr
     - run: cd /root/speedy-certz
     - run: ls -ltr
