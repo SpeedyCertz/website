@@ -24,7 +24,6 @@ jobs:
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSHKEY }}
         script: |
-          Set -e
           cd /root/speedy-certz
           ls -ltra
           git pull origin main
