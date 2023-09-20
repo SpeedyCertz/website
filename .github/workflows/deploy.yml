@@ -23,7 +23,10 @@ jobs:
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSHKEY }}
-        script: whoami
+        script: |
+          ls
+          cd /root/speedycertz
+          ls
         
 
     - name: Executing remote command
