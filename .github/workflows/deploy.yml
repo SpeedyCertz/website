@@ -26,7 +26,8 @@ jobs:
         script: ls
       with:
         source: "."
-        target: "/root/speedy-certz
+        target: "/root/speedy-certz"
+        
 
     - name: Executing remote command
       uses: appleboy/ssh-action@master
