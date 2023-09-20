@@ -23,9 +23,10 @@ jobs:
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
+        script: ls
       with:
         source: "."
-        target: "/root/speedy-certz"
+        target: "/root/speedy-certz
 
     - name: Executing remote command
       uses: appleboy/ssh-action@master
