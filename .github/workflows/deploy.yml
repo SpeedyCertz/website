@@ -20,6 +20,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSHKEY }}
         script: |
