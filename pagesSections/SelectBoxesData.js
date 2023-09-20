@@ -95,7 +95,7 @@ export const courseOptions = [
       dtl:
         [
           'Thursday 9/21 - 9:00am-1:00pm - Ke 126 W Main Street, Mesa, AZ, 85201',
-          'Call to discuss a different day'
+          'test Call to discuss a different day'
         ]
     },
 ]
