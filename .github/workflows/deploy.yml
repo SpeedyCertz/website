@@ -25,10 +25,8 @@ jobs:
         key: ${{ secrets.SSHKEY }}
         script: |
           cd /root/speedy-certz
-          ls -ltr
-          git pull origin main
-          pwd
           ls -ltra
+          git pull origin main
           export NVM_DIR="$HOME/.nvm"
           [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
           npm install
