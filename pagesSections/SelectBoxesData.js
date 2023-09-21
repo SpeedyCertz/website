@@ -6,7 +6,7 @@ export const courseOptions = [
         [
           'Wednesday 9/20 - 5:00pm-7:15pm - Ke 126 W Main St, Mesa, AZ, 85201',
           'Monday 9/25 - 9:00am-11:15am - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
-          'Call to discuss a different day'
+          'Call or text first to discuss a different day'
         ]
     },
     {
@@ -15,7 +15,7 @@ export const courseOptions = [
         [
           'Wednesday 9/20 - 5:00pm-7:15pm - Ke 126 W Main Street, Mesa, AZ, 85201',
           'Monday 9/25 - 9:00am-11:15am - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
-          'Call to discuss a different day'
+          'Call or text first to discuss a different day'
         ]
     },
     {
@@ -24,7 +24,7 @@ export const courseOptions = [
         [
           'Wednesday 9/20 - 5:00pm-7:15pm - Ke 126 W Main Street, Mesa, AZ, 85201',
           'Monday 9/25 - 9:00am-11:15am - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
-          'Call to discuss a different day'
+          'Call or text first to discuss a different day'
         ]
     },
     {
@@ -33,7 +33,7 @@ export const courseOptions = [
         [
           'Wednesday 9/20 - 5:00pm-7:15pm - Ke 126 W Main Street, Mesa, AZ, 85201',
           'Monday 9/25 - 9:00am-11:15am - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
-          'Call to discuss a different day'
+          'Call or text first to discuss a different day'
         ]
     },
     {
@@ -42,7 +42,7 @@ export const courseOptions = [
           [
             'Wednesday 9/20 - 5:00pm-7:15pm - Ke 126 W Main Street, Mesa, AZ, 85201',
             'Monday 9/25 - 9:00am-11:15am - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
-            'Call to discuss a different day'
+            'Call or text first to discuss a different day'
           ]
     },
     {
@@ -51,7 +51,7 @@ export const courseOptions = [
           [
             'Wednesday 9/20 - 5:00pm-7:15pm - Ke 126 W Main Street, Mesa, AZ, 85201',
             'Monday 9/25 - 9:00am-11:15am - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
-            'Call to discuss a different day'
+            'Call or text first to discuss a different day'
           ]
     },
     {
@@ -60,7 +60,7 @@ export const courseOptions = [
           [
             'Wednesday 9/20 - 7:15pm-9:15pm - Ke 126 W Main Street, Mesa, AZ, 85201',
             'Monday 9/25 - 11:15am-1:15pm - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
-            'Call to discuss a different day'
+            'Call or text first to discuss a different day'
           ]
     },
     {
@@ -69,7 +69,7 @@ export const courseOptions = [
           [
             'Wednesday 9/20 - 7:15pm-9:15pm - Ke 126 W Main Street, Mesa, AZ, 85201',
             'Monday 9/25 - 11:15am-1:15pm - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
-            'Call to discuss a different day'
+            'Call or text first to discuss a different day'
           ]
     },
     {
@@ -79,7 +79,7 @@ export const courseOptions = [
             'Saturday 9/23 - 9:30am-3:00pm - Burton Barr Central Library 1221 N Central Ave, Phoenix, AZ, 85004',
             'Saturday 9/30 - 9:30am-3:00pm - Burton Barr Central Library 1221 N Central Ave, Phoenix, AZ, 85004',
             'Saturday 10/7 - 8:30am-2:00pm - Ke 126 W Main Street, Mesa, AZ, 85201',
-            'Call to discuss a different day'
+            'Call or text first to discuss a different day'
           ]
     },
     {
@@ -87,7 +87,7 @@ export const courseOptions = [
       dtl:
         [
             'Thursday 9/21 - 5:00pm-8:45pm - Ke 126 W Main Street, Mesa, AZ, 85201',
-            'Call to discuss a different day'
+            'Call or text first to discuss a different day'
         ]
     },
     {
@@ -95,7 +95,7 @@ export const courseOptions = [
       dtl:
         [
           'Thursday 9/21 - 9:00am-1:00pm - Ke 126 W Main Street, Mesa, AZ, 85201',
-          'Call to discuss a different day'
+          'Call or text first to discuss a different day'
         ]
     },
 ]
