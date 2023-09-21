@@ -51,6 +51,9 @@ function Course({courseIndex, StripeCoursesData}) {
       <Head>
         <title>{courses[courseIndex]?.title} </title>
       </Head>
+
+
+      
       <Flex minH={'90vh'} h='fit-content' pt='40px' pb='100px' w='100%' bgColor={'#121212'} justify={'center'} align={'center'} direction={'column'} gap='50px'>
 
 
