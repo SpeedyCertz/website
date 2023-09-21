@@ -50,6 +50,7 @@ export const courseOptions = [
         dtl:
           [
             'Wednesday 9/20 - 5:00pm-7:15pm - Ke 126 W Main Street, Mesa, AZ, 85201',
+            'Thursday 9/21 - Anytime Between 5:00pm-8:30pm - Ke 126 W Main Street, Mesa, AZ, 85201',
             'Monday 9/25 - 9:00am-11:15am - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
             'Call or text first to discuss a different day'
           ]
