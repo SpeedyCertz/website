@@ -6,9 +6,6 @@ import ClientInfoData from '../../pagesSections/ClientInfoData';
 import { stripe } from '../../Stripe/Stripe';
 import slugify from 'react-slugify';
 
-
-
-
 const courses = [
   {title:'American Red Cross Adult and Pediatric First Aid, CPR, AED Skills Secession',price:'$65.00', duration:'2.25', type:'no',  image:'/c6.jpg', slug:'american-red-cross-adult-and-pediatric-first-aid-cpr-aed-skills-secession'},
   {title:'American Red Cross Adult CPR, AED Skills Secession',price:'$60.00', duration:'1.25', type:'no', image:'/c7.jpg', slug:'american-red-cross-adult-cpr-aed-skills-secession'},
