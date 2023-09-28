@@ -36,7 +36,6 @@ export const courseOptions = [
         title:'American Red Cross Adult and Pediatric First Aid, CPR, AED Blended Learning', 
         dtl:
           [
-            'Wednesday 9/27 - 5:00pm-7:15pm - Ke 126 W Main Street, Mesa, AZ, 85201',
             'Monday 10/02 - 9:00am-11:15am - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
             'Call or text first if you are confused on which class you need'
           ]
@@ -53,7 +52,6 @@ export const courseOptions = [
         title:'American Red Cross Adult and Pediatric Basic Life Support Blended Learning', 
         dtl:
           [
-            'Wednesay 9/27 - 7:15pm-9:15pm - Ke 126 W Main Street, Mesa, AZ, 85201',
             'Monday 10/02 - 11:15am-1:15pm - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
             'Call or text first if you are confused on which class you need'
           ]
@@ -71,7 +69,6 @@ export const courseOptions = [
         dtl:
           [
             'Saturday 9/30 - 9:30am-3:00pm - Burton Barr Central Library 1221 N Central Ave, Phoenix, AZ, 85004',
-            'Saturday 10/7 - 8:30am-2:00pm - Ke 126 W Main Street, Mesa, AZ, 85201',
             'Call or text first to discuss a different day'
           ]
     },
