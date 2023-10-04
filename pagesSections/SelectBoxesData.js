@@ -65,7 +65,7 @@ export const courseOptions = [
         title:'American Red Cross Adult and Pediatric FA, CPR, AED Instructor Blended Learning', 
         dtl:
           [
-            'Saturday 10/21 - 9:30am-3:00pm - Burton Barr Central Library 1221 N Central Ave, Phoenix, AZ, 85004',
+            'Saturday 10/21 - 9:30am-3:00pm - Cholla Public Library 10050 N Metro Pkwy E, Phoenix, AZ, 85051',
             'Call or text first to discuss a different day'
           ]
     },
