@@ -4,7 +4,6 @@ export const courseOptions = [
       title:'American Red Cross Adult and Pediatric First Aid, CPR, AED Skills Secession', 
       dtl:
         [
-          'Monday 10/09 - 9:00am-11:15am - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
           'Call or text first if you are confused on which class you need'
         ]
     },
@@ -12,7 +11,6 @@ export const courseOptions = [
       title:'American Red Cross Adult CPR, AED Skills Secession', 
       dtl:
         [
-          'Monday 10/09 - 9:00am-11:15am - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
           'Call or text first if you are confused on which class you need'
         ]
     },
@@ -20,7 +18,6 @@ export const courseOptions = [
       title:'American Red Cross Adult First Aid, CPR, AED Skills Secession', 
       dtl:
         [
-          'Monday 10/09 - 9:00am-11:15am - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
           'Call or text first if you are confused on which class you need'
         ]
     },
@@ -28,7 +25,6 @@ export const courseOptions = [
       title:'American Red Cross Adult CPR Skills Secession', 
       dtl:
         [
-          'Monday 10/09 - 9:00am-11:15am - First Baptist Church of Tempe 4525 S McClintock Dr, Tempe, AZ, 85282',
           'Call or text first if you are confused on which class you need'
         ]
     },
@@ -50,7 +46,7 @@ export const courseOptions = [
         title:'American Red Cross Adult and Pediatric Basic Life Support Blended Learning', 
         dtl:
           [
-            'Wednesday 10/04 - 10:00am-12:00pm - Dobson Ranch Library 2425 S Dobson Ranch Rd, Mesa, AZ, 85202',
+            'Thursday 10/19 - 5:00pm-6:00pm - Ironwood Public Library 4333 E Chandler Blvd, Phoenix, AZ, 85048',
             'Call or text first if you are confused on which class you need'
           ]
     },
