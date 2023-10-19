@@ -68,16 +68,16 @@ export const courseOptions = [
     {
       title:'American Red Cross Adult and Pediatric First Aid, CPR, AED', 
       dtl:
-        [
+          [
             'Call or text first if you are confused on which class you need'
-        ]
+          ]
     },
     {
       title:'American Red Cross Adult and Pediatric Basic Life Support', 
       dtl:
-        [
-          'Call or text first if you are confused on which class you need'
-        ]
+          [
+            'Call or text first if you are confused on which class you need'
+          ]
     },
 ]
 
